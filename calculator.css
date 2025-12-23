@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(83, 44, 7);
+  font-size: 60px;
+  padding: 50px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
