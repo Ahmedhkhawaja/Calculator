@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  background-color: rgb(255, 247, 239);
 }
 
 #heading {
@@ -13,5 +14,25 @@ html, body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#calculator{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#numbers {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#numbers button {
 
+  border-radius: 999px;
+  border:none;
+  background-color: rgb(240, 197, 155);
+  padding: 20px 15px;
+  margin: 5px;
+}
 
