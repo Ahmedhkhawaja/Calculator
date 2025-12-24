@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: rgb(255, 247, 239);
+  background-color: rgb(248, 224, 201);
 }
 
 #heading {
@@ -14,11 +14,52 @@ html, body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#calculator{
-  display:flex;
+
+#parent {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
+
+#borders {
+  background-color: rgb(178, 142, 106); 
+  width: 280px;
+  height: 460px;
+  border-radius: 20px;
+}
+
+#calculator{
+  display:flex;
+
+  justify-content: center;
+  height: 260px;
+}
+
+#screen{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  margin: 20px;
+}
+
+#screeen{
+  height: 80px;
+  width: 1000px;
+  background-color: rgb(255, 230, 180);
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+
+#para {
+  margin: 2px;
+  font-size: 30px;
+  font-family: "Digital7", monospace;
+}
+
+
 #numbers {
   width: 200px;
   height: 200px;
@@ -28,11 +69,69 @@ html, body {
   grid-template-columns: repeat(3, 1fr);
 }
 #numbers button {
-
   border-radius: 999px;
   border:none;
   background-color: rgb(240, 197, 155);
-  padding: 20px 15px;
+  padding: 16px 0px;
   margin: 5px;
 }
 
+#numbers1 {
+  width: 50px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  display:grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+#numbers1 button {
+
+  border-radius: 999px;
+  border:none;
+  background-color: rgb(231, 185, 138);
+  padding: 16px 15px;
+  margin: 5px;
+}
+
+
+#desc{
+  display:flex;
+  align-items: center;  
+  justify-content: center;
+  padding-top: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(83, 44, 7);
+}
+
+#bottomrow{
+  display: flex;
+  margin-left: 20px;
+}
+
+#bottomrow button{
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border-color: transparent;
+  background-color: rgb(255, 237, 219);
+}
+
+#clear{
+  width: 123px;
+}
+
+#del{
+  margin-left: 9px;
+  width: 110px;
+}
+
+@font-face {
+  font-family: "Digital7";
+  src: url("digital-7.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+button{
+  font-size: 20px;
+}
