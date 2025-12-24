@@ -37,7 +37,7 @@ A vertically centered calculator with a digital-style display and rounded button
   - Custom fonts
 - **JavaScript** – calculator logic (`calculator.js`)
 
----
+--- 
 
 ## 📂 Project Structure
 
