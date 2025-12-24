@@ -19,19 +19,9 @@ const minus = document.getElementById("minus");
 const multiply = document.getElementById("multiply");
 const divide = document.getElementById("divide");
 const screen = document.getElementById("para");
+const answer = document.getElementById("ans");
 
 let expression = "";
-
-function evaluate(value) {
-  if (expression.length > 15) {
-    expression = "";
-    screen.textContent = "LENGTH EXCEEDED"
-    return;
-  }
-  console.log(value);
-  expression += value;
-  screen.textContent = expression;
-}
 
 one.addEventListener(("click"), () => evaluate("1"));
 two.addEventListener("click", () => evaluate("2"));
@@ -64,12 +54,24 @@ document.addEventListener(("keydown"), (event) => {
   }
 });
 
+function evaluate(value) {
+  if (expression.length > 15) {
+    expression = "";
+    screen.textContent = "LENGTH EXCEEDED"
+    return;
+  }
+  console.log(value);
+  expression += value;
+  screen.textContent = expression;
+  answer.textContent = "";
+}
+
 function equalsFunc () {
   try {
     expression = parseFloat(eval(expression).toFixed(5)).toString();
-    screen.textContent = expression;
+    answer.textContent = expression;
   } catch {
-    screen.textContent = "ERROR";
+    answer.textContent = "ERROR";
     expression = "";
   }
 };

@@ -39,7 +39,7 @@ html, body {
   display:flex;
   align-items: center;
   justify-content: center;
-  text-align: right;
+  text-align: left;
   margin: 20px;
 }
 
@@ -55,8 +55,17 @@ html, body {
 
 #para {
   margin: 2px;
+  height: 40px;
+
   font-size: 30px;
   font-family: "Digital7", monospace;
+}
+
+#ans {
+  margin: 2px;
+  font-size: 30px;
+  font-family: "Digital7", monospace;
+  text-align: right;
 }
 
 
