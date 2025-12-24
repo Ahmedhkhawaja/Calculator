@@ -82,9 +82,11 @@ function backspaceFunc() {
   if (len == 0) return;
   expression = expression.slice(0,len - 1).toString();
   screen.textContent = expression;
+  answer.textContent = "";
 };
 
 clear.addEventListener("click", () => {
   expression = "";
   screen.textContent = "";
+  answer.textContent = "";
 });
