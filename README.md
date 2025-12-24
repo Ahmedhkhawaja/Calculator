@@ -26,10 +26,11 @@ A vertically centered calculator with a digital-style display and rounded button
 📂 Project Structure  
 
 calculator/  
-├── index.html  
+├── calculator.html  
 ├── calculator.css  
 ├── calculator.js  
-├── digital-7.ttf  
+├── calculator.ttf  
+├── calculator.mp4  
 └── README.md  
 
 🧱 Layout Overview  
